@@ -6,7 +6,7 @@ public class SnakeAndLadderProgram
 		int position = 0;
 		
 		
-		//PRINTED VARIABLE NAME
+		//PRINTED VARIABLE NAME AND VALUE
 		System.out.println("Position : "+position);
 	}
 }
