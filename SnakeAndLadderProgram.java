@@ -9,8 +9,14 @@ public class SnakeAndLadderProgram
 		
 		//PRINTED VARIABLE NAME AND VALUE
 		System.out.println("Position : "+position);
+		
+		
+		//GENERATING RANDOM NUMBER		
 		Random randomValue = new Random();
 		int turnResult = randomValue.nextInt(6)+1;
+		
+		
+		//PRINTING RANDOM NUMBER
 		System.out.println("Turn Result : "+turnResult);
 	}
 }
