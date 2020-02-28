@@ -2,6 +2,11 @@ public class SnakeAndLadderProgram
 {
 	public static void main(String[] args) 
 	{
-		System.out.println("Welcome In First Program Of Sanke And Ladder");
+		//VARIABLE
+		int position=0;
+		
+		
+		//PRINTED VARIABLE NAME
+		System.out.println("Position : "+position);
 	}
 }
