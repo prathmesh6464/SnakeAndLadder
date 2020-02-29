@@ -7,27 +7,50 @@ public class SnakeAndLadderProgram
 		int position = 0;
 
 
-		//GENERATING RANDOM NUMBERS
-		Random randomValue = new Random();
-		int valueForPlay = randomValue.nextInt(3);
-		Random randomValue2 = new Random();
-		int turnResult = randomValue.nextInt(6)+1;
-
-		
-		//SWITCH CASE FOR RUNNING OPTIONS OF GAME
-		switch(valueForPlay)
+		while(true) 
 		{
-			case 0:
+			//GENERATING RANDOM NUMBERS
+			Random randomValue = new Random();
+			int valueForPlay = randomValue.nextInt(3);
+			//Random randomValue2 = new Random();
+			int turnResult = randomValue.nextInt(6)+1;
+
+
+			//SWITCH CASE FOR RUNNING OPTIONS OF GAME
+			if(valueForPlay == 0)
+			{
 				System.out.println("No Play");
-				break;
-			case 1:
+			}
+			else if(valueForPlay == 1)
+			{
 				position += turnResult;
 				System.out.println("Current Position After Ladder :"+position);
-				break;
-			case 2:
+				if(position == 100) 
+				{
+					System.out.println("Player Won The Game");
+					break;
+				}
+				if(position <= 0)
+				{
+					System.out.println("Game Started Again");
+					position=0;
+				}
+			}
+			else if(valueForPlay == 2)
+			{
 				position -= turnResult;
 				System.out.println("Current Position After Snake : "+position);
-				break;
+				if(position == 100) 
+				{
+					System.out.println("Player Won The Game");
+					break;
+				}
+				if(position <= 0)
+				{
+					System.out.println("Game Started Again");
+					position=0;
+				}
+			}
 		}
-	}
+	}	
 }
