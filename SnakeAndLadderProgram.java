@@ -5,18 +5,29 @@ public class SnakeAndLadderProgram
 	{
 		//VARIABLE
 		int position = 0;
-		
-		
-		//PRINTED VARIABLE NAME AND VALUE
-		System.out.println("Position : "+position);
-		
-		
-		//GENERATING RANDOM NUMBER		
+
+
+		//GENERATING RANDOM NUMBER
 		Random randomValue = new Random();
+		int valueForPlay = randomValue.nextInt(3);
+		Random randomValue2 = new Random();
 		int turnResult = randomValue.nextInt(6)+1;
+
 		
-		
-		//PRINTING RANDOM NUMBER
-		System.out.println("Turn Result : "+turnResult);
+		//SWITCH CASE FOR RUNNING OPTIONS OF GAME
+		switch(valueForPlay)
+		{
+			case 0:
+				System.out.println("No Play");
+				break;
+			case 1:
+				position += turnResult;
+				System.out.println("Current Position After Ladder :"+position);
+				break;
+			case 2:
+				position -= turnResult;
+				System.out.println("Current Position After Snake : "+position);
+				break;
+		}
 	}
 }
