@@ -52,7 +52,7 @@ public class SnakeAndLadderProgram
 				}//INNER ELSE-IF ENDED					
 			}//OUTER ELSE-IF ENDED			
 		}//WHILE LOOP ENDED
-	}
+	}//FUNCTION PLAY ENDED
 
 
 	//JAVA MAIN FUNCTION
