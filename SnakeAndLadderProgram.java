@@ -106,6 +106,8 @@ public class SnakeAndLadderProgram
 			}//OUTER ELSE-IF ENDED				
 		}//WHILE LOOP ENDED
 	}
+	
+	
 	public static void main(String[] args) 
 	{
 		//FUNCTION CALLED
